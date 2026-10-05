@@ -1,22 +1,22 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 /**
  * Dynamic robots.txt route for Next.js 13+.
  * This will be served at /robots.txt.
  */
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://optisense.nileshrana.me'
-  
+  const baseUrl = "https://optisense.nileshrana.tech";
+
   return {
     rules: [
       {
-        userAgent: '*',
-        allow: '/',
+        userAgent: "*",
+        allow: "/",
         // Disallow private or staging routes if needed:
-        disallow: ['/api/', '/admin/'],
+        disallow: ["/api/", "/admin/"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,
-  }
+  };
 }

@@ -1,4 +1,5 @@
 # 🤖 OptiSense AI
+
 <div align="center">
   <img src="https://img.shields.io/badge/Next.js-15.3.4-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -7,7 +8,7 @@
 </div>
 
 <div align="center">
-  <h3> <a target="_blank" href="https://optisense.nileshrana.me">🌐 optisense.nileshrana.me</a></h3>
+  <h3> <a target="_blank" href="https://optisense.nileshrana.tech">🌐 optisense.nileshrana.tech</a></h3>
   <p><em>Your Personal AI Companions to Simplify Your Tasks</em></p>
 </div>
 
@@ -32,6 +33,7 @@
 ## � Quick Start
 
 ### Prerequisites
+
 - Node.js 18+
 - MongoDB Atlas account
 - Clerk account
@@ -41,7 +43,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/nileXrana/OptiSense-AI
+git clone https://github.com/nileshxrana/OptiSense-AI
 cd OptiSense-AI
 
 # Install dependencies
@@ -76,7 +78,7 @@ CLIENT_ID="your_client_id"
 CLIENT_SECRET="your_client_secret"
 ```
 
-##  Project Structure
+## Project Structure
 
 ```
 app/
@@ -102,13 +104,14 @@ public/                  # Static assets & SEO files
 ## 📞 Contact
 
 **Nilesh Rana**
-- 🌐 [Portfolio](https://nileshrana.me)
-- 💼 [LinkedIn](https://linkedin.com/in/nilexrana)
-- 🐙 [GitHub](https://github.com/nileXrana)
+
+- 🌐 [Portfolio](https://nileshrana.tech)
+- 💼 [LinkedIn](https://linkedin.com/in/nileshxrana)
+- 🐙 [GitHub](https://github.com/nileshxrana)
 
 ---
 
 <div align="center">
   <p><strong>⭐ Star this repo if you find it helpful🙏</strong></p>
-  <p><em>Built with ❤️ by nileXrana</em></p>
+  <p><em>Built with ❤️ by nileshxrana</em></p>
 </div>

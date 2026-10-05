@@ -7,7 +7,7 @@ echo "🚀 OptiSense AI - SEO Validation"
 echo "================================="
 echo ""
 
-DOMAIN="https://optisense.nileshrana.me"
+DOMAIN="https://optisense.nileshrana.tech"
 
 # Colors for output
 GREEN='\033[0;32m'

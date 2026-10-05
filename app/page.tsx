@@ -49,39 +49,39 @@ export default function Home() {
     rating: number,
     avatar: string
   }
-  const [feedbackList, setFeedbackList] = useState<Feedback[]> ([]);
+  const [feedbackList, setFeedbackList] = useState<Feedback[]>([]);
 
   const signInPage = () => {
     router.push('/signin')
   }
 
   useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const feedback = await fetch('/api/get-feedback', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      
-      if (feedback && feedback.ok) {
-        const result = await feedback.json();
-        // Ensure result is an array before setting it
-        if (Array.isArray(result)) {
-          setFeedbackList(result);
-        } else {
-          console.warn('API response is not an array:', result);
-          // Keep the default array if API doesn't return an array
+    const fetchData = async () => {
+      try {
+        const feedback = await fetch('/api/get-feedback', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+
+        if (feedback && feedback.ok) {
+          const result = await feedback.json();
+          // Ensure result is an array before setting it
+          if (Array.isArray(result)) {
+            setFeedbackList(result);
+          } else {
+            console.warn('API response is not an array:', result);
+            // Keep the default array if API doesn't return an array
+          }
         }
+      } catch (error) {
+        console.error('Error fetching feedback:', error);
+        // Keep the default array on error
       }
-    } catch (error) {
-      console.error('Error fetching feedback:', error);
-      // Keep the default array on error
     }
-  }
-  fetchData()
-}, [])
+    fetchData()
+  }, [])
 
   const learnMore = () => {
     const featuresSection = document.getElementById('features-section');
@@ -93,16 +93,16 @@ export default function Home() {
     }
   }
 
-  
+
 
   const openLinkedIn = () => {
-    window.open('https://linkedin.com/in/nilexrana', '_blank');
+    window.open('https://linkedin.com/in/nileshxrana', '_blank');
   }
 
   const submitFeedback = async () => {
     // confirmation before submitting
     const isConfirm = confirm("Feedback once submitted cannot be modified. SUBMIT?");
-    if(!isConfirm) return;
+    if (!isConfirm) return;
 
     if (feedback.trim() && rating > 0 && userName.trim()) {
       const getInitials = (name: string) => {
@@ -223,7 +223,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <ModeToggle />
               <Button onClick={signInPage} className="max-sm:hidden cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                {isSignedIn? `Hey ${user.firstName || user.primaryEmailAddress?.emailAddress.split("@")[0]}` : 'Sign In'}
+                {isSignedIn ? `Hey ${user.firstName || user.primaryEmailAddress?.emailAddress.split("@")[0]}` : 'Sign In'}
               </Button>
             </div>
           </BlurFade>
@@ -478,8 +478,8 @@ export default function Home() {
                         >
                           <Star
                             className={`h-6 w-6 ${star <= (hoveredRating || rating)
-                                ? 'fill-yellow-400 text-yellow-400'
-                                : 'text-gray-300 dark:text-gray-600'
+                              ? 'fill-yellow-400 text-yellow-400'
+                              : 'text-gray-300 dark:text-gray-600'
                               }`}
                           />
                         </button>
@@ -521,7 +521,7 @@ export default function Home() {
                   >
                     <Send className="h-4 w-4 mr-2" />
                     {submitF ? <Loader2Icon className="h-4 w-4 animate-spin" /> : 'Submit Feedback'}
-            
+
                   </Button>
                 </div>
 
@@ -545,8 +545,8 @@ export default function Home() {
                                   <Star
                                     key={i}
                                     className={`h-3 w-3 ${i < item.rating
-                                        ? 'fill-yellow-400 text-yellow-400'
-                                        : 'text-gray-300 dark:text-gray-600'
+                                      ? 'fill-yellow-400 text-yellow-400'
+                                      : 'text-gray-300 dark:text-gray-600'
                                       }`}
                                   />
                                 ))}
@@ -618,7 +618,7 @@ export default function Home() {
                 onClick={openLinkedIn}
                 className="hover:scale-110 underline underline-offset-2 dark:text-purple-400 hover:text-blue-500 dark:hover:text-purple-300 font-semibold decoration-2 transition-all duration-200 cursor-pointer dark:hover:decoration-purple-300"
               >
-                nileXrana
+                nileshxrana
               </button>
             </p>
           </div>

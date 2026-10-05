@@ -18,9 +18,9 @@ export interface PageSEOProps {
 export function generatePageMetadata({
   title = "OptiSense AI — Your Personal AI Assistants",
   description = "OptiSense AI provides 50+ specialized AI assistants for coding, writing, finance, productivity and more. Fast, affordable, and tailored to professionals and teams.",
-  ogImage = "https://optisense.nileshrana.me/robot.jpg",
+  ogImage = "https://optisense.nileshrana.tech/robot.jpg",
   keywords = [],
-  canonical = "https://optisense.nileshrana.me",
+  canonical = "https://optisense.nileshrana.tech",
 }: PageSEOProps) {
   return {
     title,
@@ -73,10 +73,10 @@ export function generatePageMetadata({
 export function generateProductSchema({
   name = "OptiSense AI",
   description = "50+ specialized AI assistants for coding, writing, finance, productivity and more",
-  url = "https://optisense.nileshrana.me",
+  url = "https://optisense.nileshrana.tech",
   price = "0",
   priceCurrency = "INR",
-  image = "https://optisense.nileshrana.me/robot.jpg",
+  image = "https://optisense.nileshrana.tech/robot.jpg",
 }: {
   name?: string;
   description?: string;
@@ -110,7 +110,7 @@ export function generateProductSchema({
  * Generate JSON-LD for FAQs. Pass an array of { question, answer } objects.
  */
 export function generateFAQSchema(
-  faqs: Array<{ question: string; answer: string }>
+  faqs: Array<{ question: string; answer: string }>,
 ) {
   return {
     "@context": "https://schema.org",
@@ -131,7 +131,7 @@ export function generateFAQSchema(
  * Pass an array of { name, url } objects.
  */
 export function generateBreadcrumbSchema(
-  items: Array<{ name: string; url: string }>
+  items: Array<{ name: string; url: string }>,
 ) {
   return {
     "@context": "https://schema.org",
@@ -154,19 +154,19 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "OptiSense AI",
-    url: "https://optisense.nileshrana.me",
-    logo: "https://optisense.nileshrana.me/robot.jpg",
+    url: "https://optisense.nileshrana.tech",
+    logo: "https://optisense.nileshrana.tech/robot.jpg",
     sameAs: [
-      "https://nileshrana.me",
-      "https://github.com/nileXrana",
-      "https://linkedin.com/in/nilexrana",
+      "https://nileshrana.tech",
+      "https://github.com/nileshxrana",
+      "https://linkedin.com/in/nileshxrana",
     ],
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "customer support",
         email: "imp.communicate@gmail.com",
-        url: "https://optisense.nileshrana.me/contact",
+        url: "https://optisense.nileshrana.tech/contact",
       },
     ],
   };

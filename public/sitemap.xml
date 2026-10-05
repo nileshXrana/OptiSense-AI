@@ -4,31 +4,31 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://optisense.nileshrana.me/</loc>
+    <loc>https://optisense.nileshrana.tech/</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://optisense.nileshrana.me/ai-assistants</loc>
+    <loc>https://optisense.nileshrana.tech/ai-assistants</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://optisense.nileshrana.me/dashboard</loc>
+    <loc>https://optisense.nileshrana.tech/dashboard</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://optisense.nileshrana.me/assistants</loc>
+    <loc>https://optisense.nileshrana.tech/assistants</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://optisense.nileshrana.me/signin</loc>
+    <loc>https://optisense.nileshrana.tech/signin</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -45,7 +45,7 @@ const page = () => {
     getUserAssistants();
   }, [])
 
-  
+
   const { isSignedIn, user } = useUser();
 
   const getUserAssistants = async () => {
@@ -60,7 +60,7 @@ const page = () => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        userEmail: user?.primaryEmailAddress?.emailAddress 
+        userEmail: user?.primaryEmailAddress?.emailAddress
       })
     })
     const data = await result.json()
@@ -71,13 +71,13 @@ const page = () => {
 
   // use states :
   const [loading, setLoading] = useState(false)
-  
+
   const router = useRouter();
-  
+
   const [selectedAssistants, setselectedAssistants] = useState<ASSISTANT[]>([]);
 
   const openLinkedIn = () => {
-    window.open('https://linkedin.com/in/nilexrana', '_blank');
+    window.open('https://linkedin.com/in/nileshxrana', '_blank');
   }
   const onselect = (obj: ASSISTANT) => {
     const item = selectedAssistants.find((object: ASSISTANT) => object.id == obj.id);
@@ -152,7 +152,7 @@ const page = () => {
           <BlurFade delay={0.2}>
             <div className='flex gap-5 justify-center items-center'>
               <div className='flex items-center justify-center'>
-              <ModeToggle />
+                <ModeToggle />
               </div>
               <div className='flex items-center justify-center scale-110 transform hover:scale-120'>
                 <UserButton />
@@ -206,7 +206,7 @@ const page = () => {
                 onClick={openLinkedIn}
                 className=" hover:text-blue-500 dark:text-purple-400 dark:hover:text-purple-300 font-semibold underline decoration-2 underline-offset-2 transition-all duration-200 cursor-pointer hover:scale-110 dark:hover:decoration-purple-300"
               >
-                nileXrana
+                nileshxrana
               </button>
             </p>
           </div>

@@ -34,8 +34,8 @@ const customStyles = `
 
 const page = () => {
 
-const openLinkedIn = () => {
-    window.open('https://linkedin.com/in/nilexrana', '_blank');
+  const openLinkedIn = () => {
+    window.open('https://linkedin.com/in/nileshxrana', '_blank');
   }
 
   return (
@@ -46,7 +46,7 @@ const openLinkedIn = () => {
         <header className="p-6 flex justify-between items-center">
           <BlurFade delay={0.1}>
             <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-              
+
 
               <div className="flex items-center gap-3">
                 <div className="relative">
@@ -75,7 +75,7 @@ const openLinkedIn = () => {
               </div>
             </Link>
           </BlurFade>
-          
+
           <BlurFade delay={0.2}>
             <ModeToggle />
           </BlurFade>
@@ -84,7 +84,7 @@ const openLinkedIn = () => {
         {/* Main Content */}
         <div className="flex items-center justify-center min-h-[calc(100vh-120px)] px-6">
           <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
-            
+
             {/* Left Side - Welcome Content */}
             <BlurFade delay={0.3}>
               <div className="text-center lg:text-left">
@@ -94,7 +94,7 @@ const openLinkedIn = () => {
                 <p className="max-sm:hidden text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                   Sign in to access your personal AI assistants and continue your productivity journey.
                 </p>
-                
+
                 {/* Benefits */}
                 <div className="max-md:hidden space-y-4 mb-8">
                   <div className="flex items-center gap-3 justify-center lg:justify-start">
@@ -125,7 +125,7 @@ const openLinkedIn = () => {
             <BlurFade delay={0.5}>
               <div className="w-full max-w-md mx-auto">
                 <div className=" bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-purple-100 dark:border-purple-800">
-                  
+
                   {/* Logo and Title */}
                   <div className="text-center mb-8">
                     <div className="flex justify-center mb-4">
@@ -163,11 +163,11 @@ const openLinkedIn = () => {
                             Sign In
                           </Button>
                         </SignInButton>
-                        
+
                         <div className="text-center text-gray-500 dark:text-gray-400">
                           <span>Don't have an account?</span>
                         </div>
-                        
+
                         <SignUpButton mode="modal">
                           <Button variant="outline" className="cursor-pointer w-full border-2 border-indigo-200 dark:border-indigo-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 py-3 text-lg font-semibold rounded-xl transition-all duration-300">
                             Create Account
@@ -175,11 +175,11 @@ const openLinkedIn = () => {
                         </SignUpButton>
                       </div>
                     </SignedOut>
-                    
+
                     <SignedIn>
                       <div className="text-center">
                         <p className="text-green-600 dark:text-green-400 mb-4 font-medium">✅ You're Signed In!</p>
-                        <UserButton 
+                        <UserButton
                           afterSignOutUrl="/"
                           appearance={{
                             elements: {
@@ -219,13 +219,13 @@ const openLinkedIn = () => {
                 onClick={openLinkedIn}
                 className="hover:scale-110 underline underline-offset-2 dark:text-purple-400 hover:text-blue-500 dark:hover:text-purple-300 font-semibold decoration-2 transition-all duration-200 cursor-pointer dark:hover:decoration-purple-300"
               >
-                nileXrana
+                nileshxrana
               </button>
             </p>
           </div>
         </div>
 
-        <UserLogger/>
+        <UserLogger />
       </div>
     </ClerkProvider>
   )

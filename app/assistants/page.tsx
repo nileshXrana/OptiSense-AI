@@ -13,8 +13,8 @@ export const metadata = generatePageMetadata({
     "fitness coach",
     "custom AI",
   ],
-  canonical: "https://optisense.nileshrana.me/assistants",
-  ogImage: "https://optisense.nileshrana.me/robot.jpg",
+  canonical: "https://optisense.nileshrana.tech/assistants",
+  ogImage: "https://optisense.nileshrana.tech/robot.jpg",
 });
 
 export default function AssistantsPage() {
