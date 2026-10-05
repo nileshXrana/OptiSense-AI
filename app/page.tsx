@@ -599,7 +599,7 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400">
                 For any queries, support or additional feedback, please mail us.
               </p>
-              <p className="text-gray-600 p-1 font-bold dark:text-gray-400">imp.communicate@gmail.com</p>
+              <p className="text-gray-600 p-1 font-bold dark:text-gray-400">nileshxrana@gmail.com</p>
               <p className="text-gray-600 dark:text-gray-400">
                 © 2025 OptiSense AI, all rights reserved.
               </p>

@@ -113,7 +113,7 @@ export default function RootLayout({
           {
             "@type": "ContactPoint",
             "contactType": "customer support",
-            "email": "imp.communicate@gmail.com",
+            "email": "nileshxrana@gmail.com",
             "url": "https://optisense.nileshrana.tech/contact"
           }
         ]
